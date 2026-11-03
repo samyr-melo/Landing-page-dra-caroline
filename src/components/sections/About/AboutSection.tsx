@@ -34,7 +34,7 @@ export function AboutSection() {
           <ScrollReveal direction="left" className="order-2 lg:order-1">
             <div className="aspect-[4/5] w-full max-w-md mx-auto rounded-3xl bg-pink-100/70 border border-pink-200 flex items-center justify-center p-8 text-center shadow-xs">
               <span className="text-sm font-medium text-slate-500">
-                [Espaço para fotografia profissional da Dra. Caroline no consultório][cite: 1, 6, 8]
+                [Espaço para fotografia profissional da Dra. Caroline no consultório]
               </span>
             </div>
           </ScrollReveal>
