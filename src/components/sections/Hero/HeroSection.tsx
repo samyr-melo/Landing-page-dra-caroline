@@ -35,7 +35,7 @@ export function HeroSection() {
               Transformando medo em sorrisos com segurança e acolhimento.
             </h1>
 
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg text-justify">
               Atendimento odontológico acolhedor para crianças, bebês e pacientes neurodivergentes (TEA e PCD) com técnicas avançadas e sedação consciente.
             </p>
 

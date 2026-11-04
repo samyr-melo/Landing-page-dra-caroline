@@ -27,7 +27,7 @@ export function SedationSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Texto à esquerda */}
           <ScrollReveal direction="left" className="space-y-6">
-            <span className="text-xs font-bold tracking-wider uppercase text-pink-600 bg-pink-100 px-3.5 py-1.5 rounded-full">
+            <span className="text-xs font-bold tracking-wider uppercase text-pink-600 bg-pink-100 px-4.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
               Procedimento Humanizado
             </span>
             <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
@@ -73,7 +73,7 @@ export function SedationSection() {
                 <Activity className="h-8 w-8" />
               </div>
               <h3 className="text-lg font-bold text-slate-900">Indicações Principais</h3>
-              <p className="text-xs text-slate-600 mt-2 max-w-sm leading-relaxed">
+              <p className="text-xs text-slate-600 mt-2 max-w-sm leading-relaxed text-justify">
                 Indicada para crianças com fobia de dentista, reflexo de vômito acentuado, pacientes não colaborativos ou com espectro autista e síndromes que necessitam de acolhimento sensorial.
               </p>
             </div>
