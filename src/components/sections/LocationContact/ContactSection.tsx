@@ -68,7 +68,7 @@ export function ContactSection() {
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">Horários de Atendimento</h4>
                   <p className="text-xs text-slate-600 mt-0.5">
-                    Segunda a Sexta: 08h00 às 18h00 | Consultas previamente agendadas
+                    Segunda a Sexta: 09h00 às 21h00 | Consultas previamente agendadas
                   </p>
                 </div>
               </div>
