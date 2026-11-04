@@ -5,7 +5,7 @@ import { clinicData } from '@/data/clinicInfo';
 
 export function WhatsAppFloat() {
   const message = encodeURIComponent(
-    'Olá! Gostaria de saber mais sobre as consultas com a Dra. Caroline Pamela.'
+    'Olá! Estou vindo pelo site. Gostaria de saber mais sobre as consultas com a Dra. Caroline Pamela.'
   );
   const href = `https://wa.me/${clinicData.whatsappNumber}?text=${message}`;
 

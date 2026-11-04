@@ -56,7 +56,7 @@ export function ServicesSection() {
                 </button>
 
                 <a
-                  href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent(`Olá! Gostaria de informações sobre ${service.title}.`)}`}
+                  href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent(`Olá! Estou vindo pelo site. Gostaria de informações sobre ${service.title}.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-xl bg-pink-50 px-3.5 py-1.5 text-xs font-medium text-pink-700 hover:bg-pink-100 transition-colors"
@@ -94,7 +94,7 @@ export function ServicesSection() {
 
             <div className="pt-2">
               <a
-                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent(`Olá! Gostaria de agendar uma consulta para ${selectedService.title}.`)}`}
+                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent(`Olá! Estou vindo pelo site. Gostaria de agendar uma consulta para ${selectedService.title}.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex justify-center items-center rounded-xl bg-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-pink-600 transition-all"

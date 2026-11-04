@@ -28,7 +28,7 @@ export function SedationSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Texto à esquerda */}
           <ScrollReveal direction="left" className="space-y-6">
-            <span className="text-xs font-bold tracking-wider uppercase text-pink-600 bg-pink-100 px-3.5 py-1.5 rounded-full">
+            <span className="text-xs font-bold tracking-wider uppercase text-pink-600 bg-pink-100 px-4.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
               Procedimento Humanizado
             </span>
             <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
@@ -57,7 +57,7 @@ export function SedationSection() {
 
             <div className="pt-2">
               <a
-                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent('Olá! Gostaria de tirar dúvidas sobre a sedação consciente para o meu filho.')}`}
+                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent('Olá! Dra. Caroline! Gostaria de tirar dúvidas sobre a sedação consciente para o meu filho.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-pink-600 transition-colors"
