@@ -1,4 +1,4 @@
-import { MapPin, Clock, MessageCircle } from 'lucide-react';
+import { MapPin, Clock, MessageCircle, ExternalLink } from 'lucide-react';
 import { clinicData } from '@/data/clinicInfo';
 
 function InstagramIcon({ className = 'h-5 w-5' }: { className?: string }) {
@@ -47,8 +47,17 @@ export function ContactSection() {
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">Localização</h4>
                   <p className="text-xs text-slate-600 mt-0.5">
-                    {clinicData.city} - AM (Consultório com acessibilidade e ambiente sensorial adaptado)
+                    {clinicData.fullLocation}
                   </p>
+                  <a
+                    href={clinicData.googleMapsLocationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-pink-600 hover:text-pink-700 hover:underline"
+                  >
+                    <span>Abrir no Google Maps</span>
+                    <ExternalLink aria-hidden="true" className="h-3.5 w-3.5" />
+                  </a>
                 </div>
               </div>
 
@@ -84,7 +93,7 @@ export function ContactSection() {
 
             <div className="pt-4 border-t border-pink-100">
               <a
-                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent('Olá! Gostaria de agendar uma consulta para o meu filho.')}`}
+                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent('Olá! Estou vindo pelo site. Gostaria de agendar uma consulta para o meu filho.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex justify-center items-center gap-2 rounded-2xl bg-pink-500 px-6 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-pink-600 transition-colors"
@@ -100,7 +109,7 @@ export function ContactSection() {
               title="Localização do Consultório"
               className="w-full h-full border-0"
               loading="lazy"
-              src="https://maps.google.com/maps?q=Manaus&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=-3.1062953%2C-60.0209953&z=17&output=embed"
             />
           </div>
         </div>

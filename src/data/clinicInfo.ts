@@ -12,6 +12,7 @@ export const clinicData: ClinicContactInfo = {
   whatsappNumber: '5592981410707',
   // Cole aqui o link de compartilhar ou avaliar que copiou do Google Maps:
   googleMapsReviewUrl: 'https://maps.app.goo.gl/1W9LRVovR2wupqoN6',
+  googleMapsLocationUrl: 'https://maps.app.goo.gl/tZgkcWVXBTGWhicUA',
   instagramHandle: 'dracarolinepamela',
 };
 

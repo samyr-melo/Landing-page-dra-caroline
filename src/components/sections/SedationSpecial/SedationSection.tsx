@@ -56,7 +56,7 @@ export function SedationSection() {
 
             <div className="pt-2">
               <a
-                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent('Olá! Gostaria de tirar dúvidas sobre a sedação consciente para o meu filho.')}`}
+                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent('Olá! Dra. Caroline! Gostaria de tirar dúvidas sobre a sedação consciente para o meu filho.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-pink-600 transition-colors"
