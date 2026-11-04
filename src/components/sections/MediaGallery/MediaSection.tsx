@@ -126,7 +126,7 @@ export function MediaSection() {
 
         return nextIndex;
       });
-    }, 6000);
+    }, 8000);
 
     return () => window.clearInterval(intervalId);
   }, [isPaused, posts.length]);
