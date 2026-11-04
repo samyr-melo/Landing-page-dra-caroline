@@ -20,20 +20,23 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-6 font-medium text-slate-700">
-            {/* <Link href="#servicos" className="hover:text-pink-600 transition-colors">
+            {/* <Link href="/#servicos" className="hover:text-pink-600 transition-colors">
               Especialidades
             </Link> */}
-            <Link href="#sedacao" className="hover:text-pink-600 transition-colors">
+            <Link href="/#sedacao" className="hover:text-pink-600 transition-colors">
               Sedação Consciente
             </Link>
-            <Link href="#sobre" className="hover:text-pink-600 transition-colors">
+            <Link href="/#sobre" className="hover:text-pink-600 transition-colors">
               Sobre a Dra.
             </Link>
             {/* <Link href="#galeria" className="hover:text-pink-600 transition-colors">
               Vídeos
-            </Link> */}
-            <Link href="#contato" className="hover:text-pink-600 transition-colors">
+              </Link> */}
+            <Link href="/#contato" className="hover:text-pink-600 transition-colors">
               Localização
+            </Link>
+            <Link href="/faq" className="hover:text-pink-600 transition-colors">
+              Dúvidas
             </Link>
           </div>
         </div>

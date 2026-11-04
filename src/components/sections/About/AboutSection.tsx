@@ -41,7 +41,7 @@ export function AboutSection() {
 
           {/* Textos à direita: entram da direita */}
           <ScrollReveal direction="right" delay={150} className="space-y-6 order-1 lg:order-2">
-            <span className="text-xs font-bold tracking-wider uppercase text-purple-700 bg-purple-100 px-3.5 py-1.5 rounded-full">
+            <span className="text-xs font-bold tracking-wider uppercase text-purple-700 bg-purple-100 px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
               Sobre a Profissional
             </span>
             <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">

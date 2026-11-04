@@ -3,10 +3,16 @@ import { ClinicContactInfo, ServiceItem } from '@/types';
 export const clinicData: ClinicContactInfo = {
   name: 'Dra. Caroline Pamela',
   cro: 'CRO/AM 8928',
-  phone: '(92) 9XXXX-XXXX',
-  whatsappNumber: '5592982375384',
-  address: 'Manaus - AM',
+  focus: 'Atendimento Humanizado, Bebês, Crianças com TEA e PCD',
   city: 'Manaus',
+  state: 'AM',
+  address: 'Rua Rio Purús, 460 - Flores',
+  fullLocation: 'Rua Rio Purús, 460 - Flores, Manaus - AM, 69053-050',
+  phoneDisplay: '(92) 98141-0707',
+  whatsappNumber: '5592981410707',
+  // Cole aqui o link de compartilhar ou avaliar que copiou do Google Maps:
+  googleMapsReviewUrl: 'https://maps.app.goo.gl/1W9LRVovR2wupqoN6',
+  googleMapsLocationUrl: 'https://maps.app.goo.gl/tZgkcWVXBTGWhicUA',
   instagramHandle: 'dracarolinepamela',
 };
 

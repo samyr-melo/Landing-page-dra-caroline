@@ -9,12 +9,12 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    //{ href: '#servicos', label: 'Especialidades' },
-    { href: '#sedacao', label: 'Sedação Consciente' },
-    { href: '#sobre', label: 'Sobre a Dra.' },
-    //{ href: '#galeria', label: 'Vídeos' },
-    { href: '#faq', label: 'Dúvidas' },
-    { href: '#contato', label: 'Localização' },
+    //{ href: '/#servicos', label: 'Especialidades' },
+    { href: '/#sedacao', label: 'Sedação Consciente' },
+    { href: '/#sobre', label: 'Sobre a Dra.' },
+    //{ href: '/#galeria', label: 'Vídeos' },
+    { href: '/#contato', label: 'Localização' },
+    { href: '/faq', label: 'Dúvidas' },
   ];
 
   return (
@@ -45,7 +45,9 @@ export function Header() {
         {/* Botão Desktop */}
         <div className="hidden md:block">
           <a
-            href={`https://wa.me/${clinicData.whatsappNumber}`}
+            href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent(
+              'Olá Dra. Caroline! Estou vindo pelo site. Gostaria de mais informações sobre o atendimento.'
+            )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-pink-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-600 transition-colors"

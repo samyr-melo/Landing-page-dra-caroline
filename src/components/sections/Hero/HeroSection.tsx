@@ -5,7 +5,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-14 sm:py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-white py-14 sm:py-20 lg:py-15">
       {/* Estampa de fundo cobrindo toda a seção */}
       <div
         aria-hidden="true"
@@ -35,13 +35,13 @@ export function HeroSection() {
               Transformando medo em sorrisos com segurança e acolhimento.
             </h1>
 
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg text-justify">
               Atendimento odontológico acolhedor para crianças, bebês e pacientes neurodivergentes (TEA e PCD) com técnicas avançadas e sedação consciente.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3.5 pt-1">
               <a
-                href={`https://wa.me/${clinicData.whatsappNumber}`}
+                href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent('Olá! Estou vindo pelo site. Gostaria de agendar uma consulta para o meu filho.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex justify-center items-center rounded-xl bg-pink-500 px-6 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-pink-600 transition-all active:scale-95"

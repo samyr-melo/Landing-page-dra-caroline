@@ -4,6 +4,7 @@ import { ServicesSection } from '@/components/sections/Services/ServicesSection'
 import { SedationSection } from '@/components/sections/SedationSpecial/SedationSection';
 import { AboutSection } from '@/components/sections/About/AboutSection';
 import { MediaSection } from '@/components/sections/MediaGallery/MediaSection';
+import { ReviewsSection } from '@/components/sections/Reviews/ReviewsSection';
 //import { FaqSection } from '@/components/sections/Faq/FaqSection';
 import { ContactSection } from '@/components/sections/LocationContact/ContactSection';
 import { Footer } from '@/components/layout/Footer/Footer';
@@ -11,7 +12,7 @@ import { WhatsAppFloat } from '@/components/layout/FloatingButtons/WhatsAppFloat
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-brand-text-dark antialiased">
+    <div className="min-h-screen bg-white text-slate-900 antialiased">
       <Header />
       <main>
         <HeroSection />
@@ -19,7 +20,8 @@ export default function Home() {
         <SedationSection />
         <AboutSection />
         <MediaSection />
-      {/* <FaqSection /> */}
+        <ReviewsSection />
+        {/* <FaqSection /> */}
         <ContactSection />
       </main>
       <Footer />
