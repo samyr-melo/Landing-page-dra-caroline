@@ -45,6 +45,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
 @keyframes procedure-image-marquee {
   to {
     transform: translateX(-50%);

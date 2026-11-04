@@ -68,7 +68,7 @@ export function Header() {
 
       {/* Gaveta Mobile com Transição e Delay */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out border-b border-pink-100 bg-white ${
+        className={`absolute left-0 right-0 top-full z-40 md:hidden overflow-hidden transition-all duration-300 ease-in-out border-b border-pink-100 bg-white ${
           mobileMenuOpen ? 'max-h-96 opacity-100 shadow-xl' : 'max-h-0 opacity-0 pointer-events-none'
         }`}
       >
