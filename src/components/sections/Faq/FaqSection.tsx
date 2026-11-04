@@ -19,7 +19,7 @@ export function FaqSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
           <span className="inline-flex rounded-full bg-pink-100 px-4 py-1.5 text-xs font-semibold text-pink-700">
-            Estamos aqui para ajudar
+            Estamos aqui para auxiliar você e sua família
           </span>
           <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             Perguntas frequentes

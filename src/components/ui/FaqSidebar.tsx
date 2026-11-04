@@ -153,7 +153,7 @@ export function FaqSidebar({ isOpen, onClose }: FaqSidebarProps) {
           </p>
           <a
             href={`https://wa.me/${clinicData.whatsappNumber}?text=${encodeURIComponent(
-              'Olá Dra. Caroline! Gostaria de tirar algumas dúvidas pontuais sobre o atendimento.'
+              'Olá Dra. Caroline! Estou vindo pelo site. Gostaria de tirar algumas dúvidas pontuais sobre o atendimento.'
             )}`}
             target="_blank"
             rel="noopener noreferrer"

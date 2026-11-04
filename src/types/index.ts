@@ -30,4 +30,5 @@ export interface ClinicContactInfo {
   city: string;
   instagramHandle: string;
   googleMapsReviewUrl: string;
+  googleMapsLocationUrl: string;
 }

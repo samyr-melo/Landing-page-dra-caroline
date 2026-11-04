@@ -29,14 +29,14 @@ export function Footer() {
             <Link href="/#sobre" className="hover:text-pink-600 transition-colors">
               Sobre a Dra.
             </Link>
-            <Link href="/faq" className="hover:text-pink-600 transition-colors">
-              Dúvidas
-            </Link>
             {/* <Link href="#galeria" className="hover:text-pink-600 transition-colors">
               Vídeos
-            </Link> */}
+              </Link> */}
             <Link href="/#contato" className="hover:text-pink-600 transition-colors">
               Localização
+            </Link>
+            <Link href="/faq" className="hover:text-pink-600 transition-colors">
+              Dúvidas
             </Link>
           </div>
         </div>
