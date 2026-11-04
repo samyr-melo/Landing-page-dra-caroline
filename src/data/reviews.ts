@@ -11,7 +11,7 @@ export const clinicReviews: GoogleReview[] = [
   {
     id: '1',
     authorName: 'Paciente / Família Verificada',
-    authorRole: 'Atendimento Odontopediátrico',
+    authorRole: 'Atendimento Odontológico Humanizado',
     rating: 5,
     date: 'Recente',
     comment:
