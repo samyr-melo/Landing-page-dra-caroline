@@ -8,7 +8,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 interface InstagramPostItem {
   id: string;
   url: string;
-  title: string;
+  title?: string;
   category: string;
 }
 
@@ -16,37 +16,31 @@ const instagramPosts: InstagramPostItem[] = [
   {
     id: '1',
     url: 'https://www.instagram.com/reel/DerUQTmhNMn/',
-    //title: 'Transformando medo em sorrisos: como funciona o atendimento lúdico',
     category: 'Sedação Consciente',
   },
   {
     id: '2',
     url: 'https://www.instagram.com/p/DR7UMjzjb1j/',
-    //title: 'Transformando medo em sorrisos: como funciona o atendimento lúdico',
     category: 'Sedação Consciente',
   },
   {
     id: '3',
     url: 'https://www.instagram.com/reel/De634glh4tT/',
-    //title: 'Transformando medo em sorrisos: como funciona o atendimento lúdico',
     category: 'Sedação Consciente',
   },
   {
     id: '4',
     url: 'https://www.instagram.com/p/DS5uNj0ET-U/',
-    //title: 'Transformando medo em sorrisos: como funciona o atendimento lúdico',
     category: 'Sedação Consciente',
   },
   {
     id: '5',
     url: 'https://www.instagram.com/p/DS5uNj0ET-U/',
-    //title: 'Transformando medo em sorrisos: como funciona o atendimento lúdico',
     category: 'Sedação Consciente',
   },
   {
     id: '6',
     url: 'https://www.instagram.com/p/DS5uNj0ET-U/',
-    //title: 'Transformando medo em sorrisos: como funciona o atendimento lúdico',
     category: 'Sedação Consciente',
   },
 ];
@@ -180,7 +174,11 @@ export function MediaSection() {
                   className="h-full rounded-3xl border border-pink-100 bg-white shadow-xs"
                 >
                   <div className="p-4 pb-3">
-                    <h3 className="text-sm font-bold text-slate-900">{post.title}</h3>
+                    {post.title && (
+                      <h3 className="text-sm font-bold text-slate-900">
+                        {post.title}
+                      </h3>
+                    )}
                     <p className="mt-1 text-xs font-medium text-pink-600">
                       {post.category}
                     </p>
