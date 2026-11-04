@@ -8,8 +8,8 @@ export const clinicData: ClinicContactInfo = {
   state: 'AM',
   address: 'Rua Rio Purús, 460 - Flores',
   fullLocation: 'Rua Rio Purús, 460 - Flores, Manaus - AM, 69053-050',
-  phoneDisplay: '(92) 98141-0707',
-  whatsappNumber: '5592981410707',
+  phoneDisplay: '(92) 99527-9430',
+  whatsappNumber: '5592995279430',
   // Cole aqui o link de compartilhar ou avaliar que copiou do Google Maps:
   googleMapsReviewUrl: 'https://maps.app.goo.gl/1W9LRVovR2wupqoN6',
   googleMapsLocationUrl: 'https://maps.app.goo.gl/tZgkcWVXBTGWhicUA',
