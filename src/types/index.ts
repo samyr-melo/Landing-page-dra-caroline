@@ -21,9 +21,13 @@ export interface FaqItem {
 export interface ClinicContactInfo {
   name: string;
   cro: string;
-  phone: string;
+  focus: string;
+  state: string;
   whatsappNumber: string;
   address: string;
+  fullLocation: string;
+  phoneDisplay: string;
   city: string;
   instagramHandle: string;
+  googleMapsReviewUrl: string;
 }
