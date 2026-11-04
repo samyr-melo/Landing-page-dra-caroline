@@ -26,7 +26,7 @@ export function InstagramEmbed({ postUrl }: InstagramEmbedProps) {
   }, [postUrl]);
 
   return (
-    <div className="flex justify-center w-full overflow-hidden rounded-3xl border border-pink-100 bg-white p-2 shadow-xs">
+    <div className="flex w-full min-w-0 justify-center bg-white">
       <blockquote
         className="instagram-media"
         data-instgrm-permalink={postUrl}
@@ -34,11 +34,11 @@ export function InstagramEmbed({ postUrl }: InstagramEmbedProps) {
         style={{
           background: '#FFF',
           border: 0,
-          margin: '1px',
+          margin: 0,
           maxWidth: '540px',
-          minWidth: '300px',
+          minWidth: 0,
           padding: 0,
-          width: '99.375%',
+          width: '100%',
         }}
       />
       {/* Script oficial do Instagram carregado de forma assíncrona e inteligente */}
