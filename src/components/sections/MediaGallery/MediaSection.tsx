@@ -35,12 +35,12 @@ const instagramPosts: InstagramPostItem[] = [
   },
   {
     id: '5',
-    url: 'https://www.instagram.com/p/DS5uNj0ET-U/',
+    url: 'https://www.instagram.com/p/DeO8DdbBuDr/',
     category: 'Sedação Consciente',
   },
   {
     id: '6',
-    url: 'https://www.instagram.com/p/DS5uNj0ET-U/',
+    url: 'https://www.instagram.com/p/Dd4UcYctGmR/',
     category: 'Sedação Consciente',
   },
 ];
