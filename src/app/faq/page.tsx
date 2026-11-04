@@ -8,7 +8,7 @@ import { clinicData } from '@/data/clinicInfo';
 export const metadata: Metadata = {
   title: `Perguntas Frequentes | ${clinicData.name}`,
   description:
-    'Respostas sobre odontopediatria, sedação consciente, TEA e PCD e primeira consulta em Manaus.',
+    'Respostas sobre sedação consciente, TEA e PCD e primeira consulta em Manaus.',
 };
 
 export default function FaqPage() {

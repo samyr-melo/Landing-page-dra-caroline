@@ -33,7 +33,7 @@ export const initialServices: ServiceItem[] = [
   },
   {
     id: 'prevencao-infantil',
-    title: 'Odontopediatria Preventiva',
+    title: 'Acompanhamento Preventivo',
     shortDescription: 'Acompanhamento do desenvolvimento dos primeiros dentes, higiene lúdica e prevenção de cáries.',
     iconName: 'Sparkles',
   },
