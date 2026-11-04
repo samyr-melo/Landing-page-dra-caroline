@@ -9,12 +9,12 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    //{ href: '#servicos', label: 'Especialidades' },
-    { href: '#sedacao', label: 'Sedação Consciente' },
-    { href: '#sobre', label: 'Sobre a Dra.' },
-    //{ href: '#galeria', label: 'Vídeos' },
-    { href: '#faq', label: 'Dúvidas' },
-    { href: '#contato', label: 'Localização' },
+    //{ href: '/#servicos', label: 'Especialidades' },
+    { href: '/#sedacao', label: 'Sedação Consciente' },
+    { href: '/#sobre', label: 'Sobre a Dra.' },
+    //{ href: '/#galeria', label: 'Vídeos' },
+    { href: '/#contato', label: 'Localização' },
+    { href: '/faq', label: 'Dúvidas' },
   ];
 
   return (
