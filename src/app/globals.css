@@ -45,8 +45,24 @@ html {
   scroll-behavior: smooth;
 }
 
-section[id] {
-  scroll-margin-top: 5rem;
+@keyframes procedure-image-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.procedure-image-marquee-track {
+  animation: procedure-image-marquee 28s linear infinite;
+}
+
+.procedure-image-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .procedure-image-marquee-track {
+    animation: none;
+  }
 }
 
 body {

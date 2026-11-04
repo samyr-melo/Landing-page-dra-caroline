@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ShieldCheck, Heart, Activity } from 'lucide-react';
 import { clinicData } from '@/data/clinicInfo';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
@@ -66,16 +67,41 @@ export function SedationSection() {
             </div>
           </ScrollReveal>
 
-          {/* Card à direita */}
+          {/* Galeria contínua para imagens dos procedimentos */}
           <ScrollReveal direction="right" delay={150}>
-            <div className="rounded-3xl border border-pink-100 bg-pink-50/50 p-8 flex flex-col justify-center items-center text-center">
-              <div className="w-16 h-16 rounded-2xl bg-white shadow-xs flex items-center justify-center text-purple-600 mb-4">
-                <Activity className="h-8 w-8" />
+            <div
+              role="region"
+              aria-label="Imagens dos procedimentos disponíveis"
+              className="@container/procedures aspect-square overflow-hidden rounded-3xl border border-pink-100 bg-pink-50/50"
+            >
+              <div className="procedure-image-marquee-track flex h-full w-max">
+                {[0, 1].map((group) => (
+                  <div
+                    key={group}
+                    aria-hidden={group === 1}
+                    className="flex h-full shrink-0 items-center gap-4 pr-4"
+                  >
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <div
+                        key={`${group}-${index}`}
+                        className="relative h-full w-[100cqw] shrink-0 overflow-hidden"
+                      >
+                        <Image
+                          src="/assets/images/Foto%2023-01-2026,%2015%2031%2048.jpg"
+                          alt={
+                            group === 0
+                              ? `Imagem ${index + 1} da clínica e dos procedimentos`
+                              : ''
+                          }
+                          fill
+                          sizes="(max-width: 1023px) 100vw, 50vw"
+                          className="object-cover object-top"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ))}
               </div>
-              <h3 className="text-lg font-bold text-slate-900">Indicações Principais</h3>
-              <p className="text-xs text-slate-600 mt-2 max-w-sm leading-relaxed text-justify">
-                Indicada para crianças com fobia de dentista, reflexo de vômito acentuado, pacientes não colaborativos ou com espectro autista e síndromes que necessitam de acolhimento sensorial.
-              </p>
             </div>
           </ScrollReveal>
         </div>
