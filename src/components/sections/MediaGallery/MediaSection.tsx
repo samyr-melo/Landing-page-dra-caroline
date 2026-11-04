@@ -15,7 +15,7 @@ interface InstagramPostItem {
 const instagramPosts: InstagramPostItem[] = [
   {
     id: '1',
-    url: 'https://www.instagram.com/reel/DerUQTmhNMn/',
+    url: 'https://www.instagram.com/p/DS5uNj0ET-U/',
     category: 'Sedação Consciente',
   },
   {
@@ -30,7 +30,7 @@ const instagramPosts: InstagramPostItem[] = [
   },
   {
     id: '4',
-    url: 'https://www.instagram.com/p/DS5uNj0ET-U/',
+    url: 'https://www.instagram.com/reel/DerUQTmhNMn/',
     category: 'Sedação Consciente',
   },
   {
