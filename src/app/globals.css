@@ -56,7 +56,7 @@ section[id] {
 }
 
 .procedure-image-marquee-track {
-  animation: procedure-image-marquee 28s linear infinite;
+  animation: procedure-image-marquee 40s linear infinite;
 }
 
 .procedure-image-marquee-track:hover {
