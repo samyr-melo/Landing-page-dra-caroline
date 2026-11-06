@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Award, GraduationCap, HeartHandshake, Stethoscope } from 'lucide-react';
 import { clinicData } from '@/data/clinicInfo';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
@@ -32,10 +33,14 @@ export function AboutSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Foto à esquerda: entra da esquerda */}
           <ScrollReveal direction="left" className="order-2 lg:order-1">
-            <div className="aspect-[4/5] w-full max-w-md mx-auto rounded-3xl bg-pink-100/70 border border-pink-200 flex items-center justify-center p-8 text-center shadow-xs">
-              <span className="text-sm font-medium text-slate-500">
-                [Espaço para fotografia profissional da Dra. Caroline no consultório]
-              </span>
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-pink-200 bg-pink-100/70 shadow-xs">
+              <Image
+                src="/assets/images/draCaroline/DSC02588.jpg"
+                alt="Dra. Caroline Pamela em seu consultório"
+                fill
+                sizes="(max-width: 1023px) 100vw, 448px"
+                className="object-cover"
+              />
             </div>
           </ScrollReveal>
 
