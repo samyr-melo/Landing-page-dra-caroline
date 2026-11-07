@@ -322,7 +322,7 @@ export function ReviewsSection() {
               </div>
             </ScrollReveal>
             <p className="mt-5 text-center text-xs text-slate-500">
-              Exibindo {reviews.length} comentários fornecidos pelo Google Maps, em ordem de publicação.
+              Exibindo {reviews.length} comentários fornecidos pelo Google Maps.
               Atualização a cada 3 semanas.
             </p>
             {selectedReview && (
