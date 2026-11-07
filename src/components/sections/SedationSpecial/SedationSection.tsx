@@ -5,35 +5,35 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 const procedureImages = [
   {
-    src: '/assets/images/sedação/Foto%20-%20Luciley%20.jpg',
+    src: '/assets/images/sedacao/Foto%20-%20Luciley%20.jpg',
     alt: 'Atendimento odontológico infantil com sedação consciente',
   },
   {
-    src: '/assets/images/sedação/Sedação%20theo(1).jpg',
+    src: '/assets/images/sedacao/Sedação%20theo(1).jpg',
     alt: 'Dentista acompanha criança durante atendimento com sedação consciente',
   },
   {
-    src: '/assets/images/sedação/Bianca.jpg',
+    src: '/assets/images/sedacao/Bianca.jpg',
     alt: 'Criança recebendo atendimento odontológico com sedação consciente',
   },
   {
-    src: '/assets/images/sedação/E%20heitor%20pediu%20para%20dormir%20durante%20o%20procedimento%20.jpg',
+    src: '/assets/images/sedacao/E%20heitor%20pediu%20para%20dormir%20durante%20o%20procedimento%20.jpg',
     alt: 'Atendimento odontológico infantil durante procedimento',
   },
   {
-    src: '/assets/images/sedação/Foto%20dente%2064%20restaurado.png',
+    src: '/assets/images/sedacao/Foto%20dente%2064%20restaurado.png',
     alt: 'Resultado de tratamento odontológico infantil',
   },
   {
-    src: '/assets/images/sedação/IMG-20251027-WA0079.jpg',
+    src: '/assets/images/sedacao/IMG-20251027-WA0079.jpg',
     alt: 'Equipe odontológica realizando atendimento infantil',
   },
   {
-    src: '/assets/images/sedação/Pac%20Valentina..jpg',
+    src: '/assets/images/sedacao/Pac%20Valentina..jpg',
     alt: 'Criança sendo acompanhada durante atendimento odontológico',
   },
   {
-    src: '/assets/images/sedação/Sedac%CC%A7a%CC%83o%20para%20canal%20endodo%CC%82ntico.jpg',
+    src: '/assets/images/sedacao/Sedac%CC%A7a%CC%83o%20para%20canal%20endodo%CC%82ntico.jpg',
     alt: 'Procedimento odontológico acompanhado pela equipe clínica',
   },
 ];
@@ -107,14 +107,14 @@ export function SedationSection() {
             <div
               role="region"
               aria-label="Imagens dos procedimentos disponíveis"
-              className="@container/procedures mx-auto aspect-[9/16] max-h-[70svh] w-full max-w-[340px] overflow-hidden rounded-3xl border border-pink-100 bg-slate-100"
+              className="@container/procedures mx-auto aspect-[9/16] max-h-[70svh] w-full max-w-[340px] overflow-hidden rounded-3xl border  bg-slate-100 border-[2px] border-pink-300"
             >
               <div className="procedure-image-marquee-track flex h-full w-max">
                 {[0, 1].map((group) => (
                   <div
                     key={group}
                     aria-hidden={group === 1}
-                    className="flex h-full shrink-0 items-center gap-4 pr-4"
+                    className="flex h-full shrink-0 items-center "
                   >
                     {procedureImages.map((image) => (
                       <div
@@ -126,7 +126,7 @@ export function SedationSection() {
                           alt={group === 0 ? image.alt : ''}
                           fill
                           sizes="(max-width: 1023px) min(100vw, 70svh), min(50vw, 70svh)"
-                          className="object-contain"
+                          className="object-cover"
                         />
                       </div>
                     ))}

@@ -18,9 +18,17 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-pink-100 bg-white/95 backdrop-blur-md">
+    <header id="topo" className="sticky top-0 z-40 w-full border-b border-pink-100 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/">
+        <Link
+          href="/#topo"
+          onClick={(event) => {
+            if (window.location.pathname === '/') {
+              event.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+        >
           <span className="text-xl font-bold tracking-tight text-pink-600">
             {clinicData.name}
           </span>
