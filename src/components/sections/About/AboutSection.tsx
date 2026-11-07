@@ -33,7 +33,7 @@ export function AboutSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Foto à esquerda: entra da esquerda */}
           <ScrollReveal direction="left" className="order-2 lg:order-1">
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-pink-200 bg-pink-100/70 shadow-xs">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-pink-400 bg-pink-100/70 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <Image
                 src="/assets/images/draCaroline/DSC02588.jpg"
                 alt="Dra. Caroline Pamela em seu consultório"
